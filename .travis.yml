@@ -2,3 +2,10 @@ language: node_js
 node_js: node
 services:
 - mongodb
+deploy:
+  provider: heroku
+  api_key:
+    secure: Umt5bxu0jjoTarwKibLbxfF1QuRPazbOnSdlEb5KNTLznLZWyWhU2Ea1URlQUd5MZQuAl7AX6yiTfaNew29+lOUWSgSpQzN5o3Tu1obfOZloSIYKnSr0u373SRZZGzBXHGK7zRrtAkIsFIuT9GiX/emByY9F/EuWIiJp2sxEcVidqrGhsvGGQI71wbQu2c0BDCNlU/9sAewPJaGYEnxs2VTs6pIaBxwbGdp9R3n35sl2DcGSeOln8QyiV/vrflpyNHEFqgPAlhseTORm7e8VNG5okOjcxRVVma/RSHDfmNpFmpAfuAP8gT7vVYrgAgwvX0M0hUmS4gkP7dWAptX85DYujnb+vtvo7aOMsoW86LN/NNSbPGaOPm1uuM7g3hwKDaS5IyOYj/7I56Pd/JXekNt7reQ1gZlznFdm8XmKpK3QyZHj4fhQ2ZT6Ogh3n8JVDZQ1s3VQL1qWt2hhQTqhLfAOhOZQlCu2zK2chhb7UFLlEMbAgSM2LIAbZzVRQQYGPQELzsy3hVeyaoLd5uc/L5ddQ45CJb/AMUYHLl2WAFOTFSzhhNeFI6XYz0h3IRcz1knrp5Sl0VVixyauOr8LZzI/7WqcKpjWrZC/3D4xHYXuZzKpnFrl7bMx3nhJil8FAnRdvZefzUGc1Z1afnI0tDPIg6JGW+Q+87q5S6PGzMw=
+  app: blog-app-ci
+  on:
+    repo: jes-a/blog-app-mongoose-ci
